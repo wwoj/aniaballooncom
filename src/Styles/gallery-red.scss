@@ -1,0 +1,17 @@
+.gallery{
+    -webkit-column-count: 3;
+    -webkit-column-width: 33%;
+    columns: 33% 3;
+    padding: 0 12px;
+}
+.gallery .pics {
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all .35s ease;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+    // max-height: 400px;
+    object-fit: cover;
+}

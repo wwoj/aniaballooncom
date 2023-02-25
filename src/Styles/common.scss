@@ -1,0 +1,64 @@
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.ds-flex-sb{
+    display: flex;
+    justify-content: space-between;
+}
+.ds-flex-c{
+    display: flex;
+    justify-content: center;
+}
+.ds-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.App{
+    font-family: 'Raleway', sans-serif;
+}
+.hide-component{
+    
+    display: none !important;
+}
+.contact-container{
+    width: 50%;
+    max-width: 520px;
+    min-width: 250px ;
+    margin:5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: max-content;
+    p{
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+    span{
+        padding: 10px;
+    }
+    
+}
+.contact-h2{
+    background: linear-gradient(135deg, #e16b5c, #f39060, #ffb56b);
+    padding: 5px;
+}
+.page-conatiner-box{
+    flex: 1;
+}
+@media only screen and (max-width: 600px)  {
+    .contact-container p{
+        font-size: 1rem;
+    }
+
+}
+
+// new styling of pages
+.page-view-container{
+    flex: 1 1;
+    margin: auto;
+    padding-bottom: 1rem;
+    width: 100%;
+}
