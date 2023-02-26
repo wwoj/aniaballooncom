@@ -1,0 +1,133 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.image-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255,250,240, 80%);
+  width: 70%;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+.image-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 0rem;
+  height: 90vh;
+}
+
+.image-modal-content img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .image-modal {
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 0.1s;
+  width: 30px;
+
+  $transition-time: 0.15s;
+
+  &-top,
+  &-bottom {
+    background-color: #666;
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+
+    &:after {
+      background-color: #fff;
+      content: "";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transition: all $transition-time;
+    }
+  }
+
+  &-top {
+    transform: rotate(45deg);
+
+    &:after {
+      left: 100%;
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+
+  &-bottom {
+    transform: rotate(-45deg);
+
+    &:after {
+      left: 0;
+      right: 100%;
+      transition-delay: $transition-time;
+    }
+  }
+
+  &:hover & {
+    &-top:after {
+      left: 0;
+      transition-delay: $transition-time;
+    }
+
+    &-bottom:after {
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+
+  &:active {
+    scale: 1.05;
+  }
+}
+
+.arrow-prev {
+  transform: translate(-50%, -50%) scaleX(-1);
+  left: -8%;
+  .arrow-top, .arrow-bottom{
+    transform-origin: bottom right;
+  }
+}
+
+.arrow-next {
+  left: 108%;
+  .arrow-top, .arrow-bottom{
+    transform-origin: bottom right;
+  }
+}
+
+.x-button{
+  top: 3%;
+  left: 108%;
+}
