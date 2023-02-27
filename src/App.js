@@ -10,14 +10,16 @@ import HeaderMain from './Components/header';
 import Footer from './Components/footer';
 import { useTranslation } from 'react-i18next';
 import Gallery_Backdrops from './Views/gallery_Backdrops';
+import { useState } from 'react';
 
 
 function App() {
   const {t,i18n} = useTranslation();
+  const [selected,setSelected] = useState("");
   return (
     <div className="App">
       <HashRouter>
-        <HeaderMain t={t} i18n={i18n} />
+        <HeaderMain t={t} i18n={i18n}  selected={selected} setSelected={setSelected}/>
         <Routes>
           <Route exact path="/" element={<Home t={t} i18n={i18n} />} />
 

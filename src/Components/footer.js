@@ -24,10 +24,10 @@ const Footer = (props) => {
           <p>AniaBalloons &copy;</p>
         </div>
         <div className='footer-services'>
-          <a href='google.com'>
+          <a href='https://www.facebook.com/anna.zygmunt.739google.com' target="_blank">
             <img src={Facebook} alt="instagram" />
           </a>
-          <a>
+          <a href="https://www.instagram.com/aniasballoonworld/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR11EcgMLwIDxYHawiz_EeGLG1eyNaDA3pmJePfVMsDLv0KGaN_ls83Is8s" target="_blank">
             <img src={Instagram} alt="instagram" />
           </a>
         </div>

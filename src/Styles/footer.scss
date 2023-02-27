@@ -11,7 +11,8 @@
     justify-content: center;
     flex-direction: row;
     gap: 20px;
-    background-color: #ffc6d3;
+    background-color: #65abe7;
+    z-index: 10;
     & >div{
         width: 45%;
         display: flex;
@@ -52,7 +53,7 @@ overflow: hidden;
     gap: 10px;
     font-size: 22px;
     font-weight: 600;
-    color: #61646a;
+    color: #fff;
     margin: 0;
     padding: 0;
 }

@@ -1,70 +1,130 @@
-.home-container
-{
-
+.page-conatiner-box{
+    width:100% ;
+    margin: auto;
+}
+.widget-container{
+    width: 100%;
+    position: relative;
+}
+.widget-main{
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-
-     &  > div:first-child {
-    }
-    & > div:not(:first-child), & > section{
-        margin-top: 20px;
-    }
-}
-.home-img-container{
-    width: 80%;
-    height: 400px;
-    overflow: hidden;
-    --mask: 
-  linear-gradient(#000 0 0) center/100% calc(100% - 40px) no-repeat,
-  radial-gradient(circle farthest-side,#000 98%,#0000) top/37.00px 40px repeat-x,
-  radial-gradient(circle farthest-side,#000 98%,#0000) bottom/37.00px 40px repeat-x;
--webkit-mask: var(--mask);
-        mask: var(--mask);
-}
-       
-
-
-.home-text{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 25px;
-    background: #ededed;
-    background: linear-gradient(136deg, #fbf2b58c, transparent);
-    width: 80%;
-    font-size: 1.5rem;  
-}
-@media only screen and (max-width: 800px)  {
-    .home-text{
-    font-size: 1rem;
-    font-weight: 600;  
-
+    align-items: stretch;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    div{
+        width: 50%;
+        img{
+            min-width: 400px;
+        }
     }
 }
-.home-text-pos{
+.home-float-container{
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.65);
-    font-weight: 600;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    padding: 10px;
-    border-radius: 20px;
+    top: 50%;
+    left: 0;
+    width: 365px !important;
+    height: 365px;
+    border-radius: 73% 27% 22% 78% / 64% 82% 18% 36% ;
+    background-color: #f3cafb;
+    z-index: 9;
+    transform: translate(-50%, 0%);
+    transition: all 0.3s ease;
 }
-.home-text-background{
-    background-size: contain;
-    filter: blur(3px);
-  -webkit-filter: blur(5px);
-  margin: 0 !important;
+.widget-container:nth-child(even){
+    .widget-main{
+        flex-direction: row-reverse;
+        .home-float-container{
+            left: unset;
+            right: 0;
+            transform: translate(50%, 0%);
+        }
+    }
+    .widget-text-container{
+        padding: 50px 0px 50px 30px;
+    }
+    .home-gallery-button-a{
+        align-self: flex-end;
+    }
+   .home-float-container{
+    
+    background-color: #65abe7;
+   }
+   .home-gallery-button-a{
+    background-color: #65abe7;
 
+   }
 }
-.w-85{
-width: 85%;
-}
+.widget-img-container
+{
+    background-color: hsla(0,0%,5%,.749);
+    color: #f0f8ff;
+    min-height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(https://images.unsplash.com/photo-1546447911-95677822edea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80);
 
+    // max-height: 400px;
+    // img{
+    //     height: 100%;
+    // }
+}
+.widget-text-container{
+    padding: 50px 30px 50px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1{
+        font-size: 48px;
+        font-weight: 600;
+        color: #012c6c;
+    }
+    p{
+        font-size: 24px;
+        font-weight: 500;
+        color: #012c6c;
+    }
+    
+}
+.home-gallery-button-a{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    text-decoration: none;
+    background-color:#f3cafb;
+
+    color: white;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 63px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.widged-top{
+    margin: auto;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #012c6c;
+    box-sizing: border-box;
+    // padding: 60px 30px;
+    background-image: url(https://cdn.create.vista.com/api/media/small/608806504/stock-vector-set-balloon-isolated-white-background);
+    div{
+        margin: auto;
+        background: #ecf6fff2;
+        height: 100%;
+        padding: 100px 30px;
+        h1{
+            margin: auto;
+            width: 70%;
+        }
+    }
+    margin-bottom: 30px;
+}
