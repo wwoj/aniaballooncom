@@ -4,7 +4,7 @@ import { faHeadset, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const ContactForm = (props)=>{
     return (
-      <div className="contact">
+      <div className="contact" id="contact">
         {/* <h1>Contact us</h1> */}
         <div className="contact-main">
           <div>
