@@ -19,8 +19,8 @@ const Header =(props)=>{
         }}>
           {matches => (
             <Fragment>
-              {matches.small && <NavbarSmall/>}
-              {matches.large && <NavbarBig selected={props.selected} setSelected ={props.setSelected }/>}
+              {matches.small && <NavbarSmall texts={props.texts} selected={props.selected} setSelected ={props.setSelected } />}
+              {matches.large && <NavbarBig texts={props.texts} selected={props.selected} setSelected ={props.setSelected }/>}
             </Fragment>
           )}
         </Media>
