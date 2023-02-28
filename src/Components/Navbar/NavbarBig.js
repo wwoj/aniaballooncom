@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom";
-import AniasBalloonLogo from '../../Pictures/AniaBalloons_Logo.png'
+import AniasBalloonLogo from '../../Pictures/AniaBalloons_Logo1.png'
 import Dropdown from '../Dropdown';
 const NavbarBig = (props)=>{
     return (
       <nav>
         <div className="header-logo-container">
-          <img src={AniasBalloonLogo} alt="" />
-          <div className="cloudLogo"></div>
+          <img className="img-logo" src={AniasBalloonLogo} alt="" />
         </div>
         <ul
           className="header-list"
