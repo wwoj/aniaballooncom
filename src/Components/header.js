@@ -1,44 +1,30 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
-import AniasBalloonLogo from '../Pictures/AniaBalloons_Logo.png'
+import React, { Fragment } from 'react';
+import Media from 'react-media';
+import NavbarSmall from './Navbar/NavbaSmall';
+import NavbarBig from './Navbar/NavbarBig';
 
+// import NavbarBig from './NavbarBig';
+ 
 const Header =(props)=>{
+  const scroll = () => {
+    const section = document.querySelector( '#contact' );
+    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+  };
     return (
       <header className="header">
-        <div className="header-logo-container"><img src={AniasBalloonLogo} alt=""/><div className='gowno'></div></div>
-        <ul
-          className="header-list"
-          onChange={(e) => {
-            let language = e.target.value.toLowerCase();
-            props.i18n.changeLanguage(language);
-          }}
-        >
-          <li className="nav-button">
-            <NavLink className="" end to="/backdrops">
-              {props.t("PageBalloons")}
-            </NavLink>
-          </li>
-          <li className="nav-button">
-            <NavLink className="" end to="/backdrops">
-              {props.t("PageWalls")}
-            </NavLink>
-          </li>
-          <li className="nav-button">
-            <NavLink className="" end to="/backdrops">
-              {props.t("PageDecorations")}
-            </NavLink>
-          </li>
-          <li className="nav-button">
-            <NavLink className="" end to="/backdrops">
-              {props.t("PageEvents")}
-            </NavLink>
-          </li>
-          <li className="nav-button">
-            <NavLink className="" end to="/backdrops">
-              {props.t("PageContact")}
-            </NavLink>
-          </li>
-        </ul>
+        {/*  */}
+            <Media queries={{
+          small: "(max-width: 850px)",
+          large: "(min-width: 850px)"
+        }}>
+          {matches => (
+            <Fragment>
+              {matches.small && <NavbarSmall texts={props.texts} selected={props.selected} setSelected ={props.setSelected } />}
+              {matches.large && <NavbarBig texts={props.texts} selected={props.selected} setSelected ={props.setSelected }/>}
+            </Fragment>
+          )}
+        </Media>
+        
       </header>
     );
 }
