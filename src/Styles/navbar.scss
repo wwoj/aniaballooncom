@@ -33,6 +33,61 @@ nav{
     z-index: 99;
     backdrop-filter: blur(50px);
     overflow: hidden;
+    display: flex;
+    ul{
+        padding: 20px 10px;
+        list-style: none;
+        background-color: #fff;
+        text-align: left;
+        li{
+            margin: 5px;
+        }
+        a{
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            line-height: 31px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 30px;
+            border-radius: 15px;
+            background-color: #65abe7;
+            color: #fff;
+            &:hover{
+                cursor: pointer;
+                background-color: #2783d4;
+                path{
+                    fill: #2783d4;
+                }
+                
+            }
+            path{
+                fill: #65abe7;
+            }
+        }
+
+    }
+    &> div{
+        height: 100%;
+        width: -webkit-fill-available;
+        background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    }
+
+}
+.navbar-small-container-svg{
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar-small-show{
     width: 100%!important;
