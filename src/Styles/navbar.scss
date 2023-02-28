@@ -1,25 +1,114 @@
+<<<<<<< Updated upstream
 
 
 .header{
+=======
+:root {
+    --font-size-header-nav: 20px;
+    --font-size-header-nav: 16px;
+}
+nav {
+    height: 50px;
+>>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
     margin-bottom: 20px;
     gap: 30px;
+<<<<<<< Updated upstream
     background-color: #ffc6d338;
     .header-logo-container{
+=======
+    background-color: #65abe7;
+    .header-logo-container {
+>>>>>>> Stashed changes
         position: relative;
         display: flex;
         align-items: center;
         justify-self: center;
-        img{
-            width: 160px;
+        .img-logo {
+            width: 135px;
             z-index: 1;
-
         }
     }
 }
+<<<<<<< Updated upstream
 .header-list{
+=======
+.navbar-list-small {
+    height: calc(100vh - 40px);
+    width: 0%;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.521);
+    z-index: 99;
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    display: flex;
+    ul {
+        padding: 20px 10px;
+        list-style: none;
+        background-color: #fff;
+        text-align: left;
+        li {
+            margin: 5px;
+        }
+        a {
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            line-height: 31px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 30px;
+            border-radius: 15px;
+            background-color: #65abe7;
+            color: #fff;
+            &:hover {
+                cursor: pointer;
+                background-color: #2783d4;
+                path {
+                    fill: #2783d4;
+                }
+            }
+            path {
+                fill: #65abe7;
+            }
+        }
+    }
+    & > div {
+        height: 100%;
+        width: -webkit-fill-available;
+        background-image: linear-gradient(
+            to right,
+            rgb(255, 255, 255),
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+        );
+    }
+}
+.navbar-small-container-svg {
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-small-show {
+    width: 100% !important;
+}
+.header-list {
+>>>>>>> Stashed changes
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -28,15 +117,22 @@
     border-radius: 15px;
     padding: 0;
     gap: 20px;
+<<<<<<< Updated upstream
    
     li a{
         font-size: 20px;
+=======
+
+    li a {
+        font-size: var(--font-size-header-nav);
+>>>>>>> Stashed changes
         font-weight: 600;
         color: #606060;
         text-decoration: none;
         white-space: nowrap;
     }
 }
+<<<<<<< Updated upstream
 .gowno{
         /* animation: move 6s ease infinite; */
         -moz-border-radius: 50%;
@@ -52,3 +148,140 @@
         width: 122px;
         box-shadow: #ffffff 65px -15px 0 -5px, #ffffff 16px -19px, #ffffff 30px 10px, #ffffff 60px 15px 0 -10px, #ffffff 85px 4px 0 -5px;
 }
+=======
+// .cloudLogo{
+//         /* animation: move 6s ease infinite; */
+//         -moz-border-radius: 50%;
+//         -webkit-border-radius: 50%;
+//         /* border-radius: 50%; */
+//         position: absolute;
+//         top: 40px;
+//         left: 8%;
+//         margin-top: -30px;
+//         margin-left: -30px;
+//         background: #FFFFFF;
+//         height: 40px;
+//         width: 122px;
+//         box-shadow: #ffffff 65px -15px 0 -5px, #ffffff 16px -19px, #ffffff 30px 10px, #ffffff 60px 15px 0 -10px, #ffffff 85px 4px 0 -5px;
+// }
+
+.dropdown {
+    width: 110px;
+    user-select: none;
+    position: relative;
+    img {
+        width: 30px;
+    }
+}
+.dropdown .dropdown-btn {
+    gap: 10px;
+    // background-color: #fff;
+    // box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-header-nav);
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.dropdown .dropdown-content {
+    position: absolute;
+    top: 110%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: 500;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+.dropdown .dropdown-content .dropdown-item {
+    box-sizing: border-box;
+    font-size: var(--font-size-dropdown-item);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+        background-color: #f4f4f4;
+    }
+}
+button:has(.close-mark) {
+    background-color: transparent;
+    border: none;
+}
+.close-mark {
+    width: 24px !important;
+    height: 17px !important;
+    // background-color: white !important;
+    position: relative;
+    border-bottom: 1px solid white;
+    transition: all 200ms linear;
+    display: inline-block;
+    width: 1.5em;
+    // height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    // font-size: 1.25rem;
+    // line-height: 1;
+    &::before {
+        width: 24px;
+        position: absolute;
+        height: 1px;
+        background-color: white;
+        top: 0;
+        left: 0;
+        content: "";
+        z-index: 2;
+        transition: all 200ms linear;
+    }
+    &::after {
+        width: 24px;
+        position: absolute;
+        height: 1px;
+        background-color: white;
+        top: 8px;
+        left: 0;
+        content: "";
+        z-index: 2;
+        transition: all 200ms linear;
+    }
+}
+.transform-after {
+    transform: rotate(45deg);
+}
+.transform-before {
+    transform: translateY(8px) rotate(-45deg);
+}
+.transform-main {
+    border-color: transparent;
+    &::after {
+        transform: rotate(45deg);
+    }
+    &::before {
+        transform: translateY(8px) rotate(-45deg);
+    }
+}
+@media all and (max-width: 1050px) {
+    :root {
+        --font-size-header-nav: 14px;
+        --font-size-dropdown-item: 12px;
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    .dropdown {
+        width: 95px;
+    }
+}
+
+>>>>>>> Stashed changes

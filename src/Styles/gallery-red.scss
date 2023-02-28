@@ -1,4 +1,4 @@
-.gallery{
+.gallery {
     -webkit-column-count: 3;
     -webkit-column-width: 33%;
     columns: 33% 3;
@@ -7,11 +7,42 @@
 .gallery .pics {
     cursor: pointer;
     margin-bottom: 12px;
-    transition: all .35s ease;
+    transition: all 0.35s ease;
 }
-img{
+img {
     width: 100%;
     vertical-align: middle;
     // max-height: 400px;
     object-fit: cover;
+<<<<<<< Updated upstream
 }
+=======
+}
+.arrow.arrow-next .arrow-top,
+.arrow.arrow-prev .arrow-top {
+    width: 35px;
+    left: -10px;
+}
+
+@media all and (max-width: 800px) {
+    .gallery {
+        columns: 2;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .gallery {
+        columns: 1;
+
+        .pics {
+            pointer-events: none;
+        }
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .gallery {
+        columns: 4;
+    }
+}
+>>>>>>> Stashed changes
