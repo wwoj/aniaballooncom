@@ -12,32 +12,32 @@ const NavbarBig = (props)=>{
           className="header-list"
           onChange={(e) => {
             let language = e.target.value.toLowerCase();
-            props.i18n.changeLanguage(language);
+            // props.i18n.changeLanguage(language);
           }}
         >
           <li className="nav-button">
             <NavLink className="" end to="/">
-              Animal Balloon
+              {props.texts("PageBalloons")}
             </NavLink>
           </li>
           <li className="nav-button">
             <NavLink className="" end to="/backdrops">
-              Photobackdrops
+              {props.texts("PageBackdrop")}
             </NavLink>
           </li>
           <li className="nav-button">
             <NavLink className="" end to="/">
-              Decorations
+            {props.texts("PageDecorations")}
             </NavLink>
           </li>
           <li className="nav-button">
             <NavLink className="" end to="/">
-              Events
+            {props.texts("PageEvents")}
             </NavLink>
           </li>
           <li className="nav-button">
             <NavLink className="" end to="/">
-              Contact
+            {props.texts("PageEvents")}
             </NavLink>
           </li>
 

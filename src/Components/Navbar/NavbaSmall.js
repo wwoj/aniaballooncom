@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import AniasBalloonLogo from '../../Pictures/AniaBalloons_Logo.png'
 import Dropdown from '../Dropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -13,7 +14,12 @@ function NavbarSmall (props){
           <div>
             <img src={AniasBalloonLogo} alt="Logo" style={{ width: "25vw" }} />
           </div>
-          <div>
+         
+          <div className="navbarsmall-btn-container">
+          <Dropdown
+              selected={props.selected}
+              setSelected={props.setSelected}
+            />
             <button
               onClick={() => {
                 setShowMenu(!showMenu);
@@ -34,34 +40,32 @@ function NavbarSmall (props){
             <li className="">
               <NavLink className="" end to="/">
               <div className="navbar-small-container-svg"><FontAwesomeIcon icon={faHippo} /></div>
-              <span>Animal Balloon</span>
+              <span>{props.texts("PageBalloons")}</span>
               </NavLink>
             </li>
             <li className="">
               <NavLink className="" end to="/backdrops">
               <div className="navbar-small-container-svg"><FontAwesomeIcon icon={faImage} /></div>
 
-              <span>Photobackdrops</span>
+              <span>{props.texts("PageBackdrop")}</span>
               </NavLink>
             </li>
             <li className="">
               <NavLink className="" end to="/">
               <div className="navbar-small-container-svg"><FontAwesomeIcon icon={faGifts} /></div>
-
-              <span>Decorations</span>
+              <span>{props.texts("PageDecorations")}</span>
               </NavLink>
             </li>
             <li className="">
               <NavLink className="" end to="/">
               <div className="navbar-small-container-svg"><FontAwesomeIcon icon={faCakeCandles} /></div>
-
-              <span>Events</span>
+              <span>{props.texts("PageEvents")}</span>
               </NavLink>
             </li>
             <li className="">
               <NavLink className="" end to="/">
               <div className="navbar-small-container-svg"><FontAwesomeIcon icon={faAddressCard} /></div>
-                <span>Contact</span>
+                <span>{props.texts("PageContact")}</span>
               </NavLink>
             </li>
           </ul>

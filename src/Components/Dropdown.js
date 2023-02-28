@@ -20,7 +20,7 @@ function Dropdown ({selected, setSelected}){
             setIsActive(!isActive);
           }}
         >
-          {selected == "us" ? options[0].lang : options[1].lang}
+          <span className="lang-selected">{selected == "us" ? options[0].lang : options[1].lang}</span>
           <img className="country-flag" src={selected==="us"?flagUSA: flagPL}/>
 
         </div>
