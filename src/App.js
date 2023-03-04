@@ -2,7 +2,7 @@ import './App.css';
 import "./Styles/main.scss";
 
 
-import { HashRouter,Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './Views/home';
 import Contact from './Views/contact';
 
@@ -12,31 +12,32 @@ import Gallery_Backdrops from './Views/gallery_Backdrops';
 import { useEffect, useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
+import { ANIMAL_BALLOONS } from "./Pictures/GalleryImages"
 
 function App() {
-  const [selected,setSelected] = useState("us");
-  const {t,i18n} = useTranslation();
-  useEffect(()=>{
+  const [selected, setSelected] = useState("us");
+  const { t, i18n } = useTranslation();
+  useEffect(() => {
     i18n.changeLanguage(selected);
-    
-  },[selected])
+
+  }, [selected])
   return (
     <div className="App">
       <HashRouter>
-        <HeaderMain texts={t}  selected={selected} setSelected={setSelected}/>
+        <HeaderMain texts={t} selected={selected} setSelected={setSelected} />
         <Routes>
-          <Route exact path="/" element={<Home  texts={t}/>} />
+          <Route exact path="/" element={<Home texts={t} />} />
 
           <Route
             exact
             path="/backdrops"
-            element={<Gallery_Backdrops  />}
+            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} />}
           />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </HashRouter>
       <div className="footer-cover"></div>
-      <Footer  />
+      <Footer />
     </div>
   );
 }
