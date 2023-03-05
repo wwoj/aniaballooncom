@@ -23,6 +23,12 @@
     justify-content: center;
     width: 70%;
     margin: auto;
+    iframe{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-height: 500px;
+        max-width: 100%;
+    }
     div{
         width: 50%;
         img{
@@ -102,6 +108,9 @@
     }
     a{
         font-size: var(--font-size-widget-text-container-a);
+        &:hover{
+            filter: brightness(0.96);
+        }
     }
     
 }

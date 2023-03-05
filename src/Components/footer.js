@@ -51,7 +51,7 @@ const Footer = (props) => {
         </div>
         <div className="footer-services">
           <a
-            href="https://www.facebook.com/anna.zygmunt.739google.com"
+            href="https://www.facebook.com/anna.zygmunt.739"
             target="_blank"
           >
             <img src={Facebook} alt="instagram" />
@@ -63,7 +63,7 @@ const Footer = (props) => {
             <img src={Instagram} alt="instagram" />
           </a>
           <a
-            href="https://www.instagram.com/aniasballoonworld/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR11EcgMLwIDxYHawiz_EeGLG1eyNaDA3pmJePfVMsDLv0KGaN_ls83Is8s"
+            href="https://www.youtube.com/@aniaballoon"
             target="_blank"
           >
             <img src={Youtube} alt="youtube" />
