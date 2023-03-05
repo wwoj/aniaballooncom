@@ -46,3 +46,5 @@ export const ANIMAL_BALLOONS = [
     "https://ams03pap001files.storage.live.com/y4m6N0s1QXdPEDduM2qH-HpES3kpMK6FxbkReokbOv2c5SX5h0WrWFp6RmRh6D1dgYCK_1cVPrWfr0YMV1hly-1TpMv9X3lV1NlH83no5ebKNACKydJQMDElJsH-3WwzqeS4ucgWWTyuHUBncf0niI8RAng7PwLPAuO_MP46mGohlYmbII52YjPEEbYw5g2VGii?width=495&height=660&cropmode=none",
     "https://ams03pap001files.storage.live.com/y4mjffD2ZwbXNn-CJwltJGT0D_T_4lubOItNFiasVPD-RCwYVgWaRy1aXfidLjneHnUUenLAo_mOXz-aBS8UaeCTKOTu2XiMYXB8IRz0f0GIWzqzjQqPFTSy1_7V5uvTgphKizVEoZVQ3pBmYriLQWibQSW9Nc4jPMAPU8AX2mcbdLSjGLDIbOm7uOXutiDhfTU?width=660&height=471&cropmode=none",
 ]
+
+export const DECORATION_BALLOONS = [];

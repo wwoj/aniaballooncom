@@ -6,7 +6,7 @@ const ContactForm = (props)=>{
     return (
       <div className="contact" id="contact">
         {/* <h1>Contact us</h1> */}
-        <div className="contact-main">
+        <div className="contact-main" id="Lorem_1">
           <div>
             <img src={Balloons} alt="Balloons" />
           </div>

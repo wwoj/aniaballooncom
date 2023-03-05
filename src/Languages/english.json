@@ -8,7 +8,9 @@
       "PageEvents":"Events",
       "PageContact":"Contact",
       "HomeText":"Welcome to my magical balloon world where simple balloons become extraordinary animals and beautiful decorations. Are you planning a wedding, first communion, baptism, birthday party or any other event? Do you want your venue to look marvelous, your kids to have unforge!able journeys, and amazing pictures for all your guests?I’m Ania. I’m specializing in making balloon decorations, photo backdrops and especially creating balloonanimals and toys for kids.",
-      "HomeText1":"Welcome to my magical balloon world where simple balloons become extraordinary animals and beautiful decorations.",
+      "HomeText1-1":"Welcome to my magical balloon world",
+      "HomeText1-2":"where simple balloons become extraordinary",
+      "HomeText1-3":"animals and beautiful decorations!",
       "HomeText2":"Are you planning a wedding, first communion, baptism, birthday party or any other event?",
       "HomeText3":"Do you want your venue to look marvelous, your kids to have unforgetable journeys, and amazing pictures for all your guests?",
       "HomeText4":"I’m Ania. I’m specializing in making balloon decorations, photo backdrops and especially creating balloon animals and toys for kids.",
@@ -21,8 +23,11 @@
       "contactHeader":"Contact",
       "contactText":"If you are interested in my offer, feel free to contact me",
       "contactWorkingTime":"Mon - Sat 8.00 - 18.00",
-      "Top_Text":"Welcome to my magical balloon world where simple balloons become extraordinary animals and beautiful decorations"
-
+      "Top_Text":"Welcome to my magical balloon world where simple balloons become extraordinary animals and beautiful decorations",
+      "GalleryTitle1": "Gallery of animal balloons",
+      "GalleryTitle2": "Gallery of backdrops",
+      "GalleryTitle3": "Gallery of decorations",
+      "GalleryTitle4": "Gallerry of events"
       
 
     

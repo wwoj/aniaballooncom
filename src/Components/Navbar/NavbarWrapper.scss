@@ -1,0 +1,100 @@
+:root {
+    --font-size-header-h1: 40px;
+    --font-size-header-h3: 25px;
+
+    --max-height-heder-wrapper: 370px;
+
+    --padding-top-heder-nav: 50px;
+    --padding-header-h1: 70px 10px 0 10px;
+    --padding-header-h3: 0 10px 0 10px;
+
+    --margin-bottom-h1: 30px;
+
+    --background-url-header: url("https://ams03pap001files.storage.live.com/y4m0PegZ1j8bstv_IUJBDCF3krU1ib-ZN3-l0iagxbQIziI5G4nYbT4ZwOZtdHLFWFrn-UbIjVcsT_Z3V0SWzzOI__yFfMTRncs9vE9BxA-SfLgnTkIa5KeOqhA7lkg6l0U1owb6Pu13YA2oMvhcGlGwqBjVLWt3nuPymGqQ11P2SEDuJIueqGnMoBdipTC_k2y?width=1280&height=394&cropmode=none");
+    --background-size-header-wrapper: 800px;
+}
+
+//google fonts
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-wrapper {
+    background: var(--background-url-header);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-height: var(--max-height-heder-wrapper);
+    background-attachment: fixed;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+    margin-bottom: 30px;
+}
+.header-wrapper .overlay {
+    height: 390px;
+    width: 100%;
+    padding-top: var(--padding-top-heder-nav);
+    color: #fff;
+    background-image: linear-gradient(188deg, rgba(159, 5, 255, 0.4117647059) 10%, rgba(253, 94, 8, 0.4196078431) 100%);
+
+    h1 {
+        font-family: "Grandstander", cursive;
+        font-size: var(--font-size-header-h1);
+        -webkit-text-stroke: 0.5px white;
+        text-shadow: 3px 3px 5px #000;
+
+        padding: var(--padding-header-h1);
+        margin-bottom: var(--margin-bottom-h1);
+    }
+
+    h3 {
+        font-family: "Grandstander", cursive;
+        font-size: var(--font-size-header-h3);
+        text-shadow: 4px 3px 4px #000;
+
+        padding: var(--padding-header-h3);
+
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    :root {
+        --font-size-header-h1: 30px;
+        --font-size-header-h3: 20px;
+
+        --max-height-heder-wrapper: 245px;
+
+        --padding-header-h1: 20px 10px 0 10px;
+        --padding-header-h3: 0 10px 0 10px;
+        
+        .header-wrapper {
+            background-size: var(--background-size-header-wrapper);
+            border-radius: 0 0 95% 95%/24%;
+        }
+    }
+}
+@media all and (max-width: 750px) {
+    :root {
+        --font-size-header-h1: 25px;
+        --font-size-header-h3: 15px;
+        
+        --padding-header-h1: 30px 10px 0 10px;
+        
+        --margin-bottom-h1: 15px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    :root {
+        --background-url-header: url("https://ams03pap001files.storage.live.com/y4mhJxMiokUoh5accLRbqqRx10Hxror9GcbI2Y2my9s56oO99xuKE4_nI60bbw9gelWHmXh80Kvwny4SwbafVcJGSmKmMTm5phF1V2xtww5mhEYN0m95Cwe5TfKFA4y_GcapS9_fEQiVTqlM4aGsOO_zIBOCElh8xcLUrou6i9dBRAKK-_TaoqC79gfimLE4pWA?width=1024&height=577&cropmode=none");
+        --background-size-header-wrapper: 420px;
+
+        --padding-top-heder-nav: 20px;
+    }
+}

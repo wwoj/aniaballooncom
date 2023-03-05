@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
-import AniasBalloonLogo from '../../Pictures/AniaBalloons_Logo1.png'
+import AniasBalloonLogo from '../../Pictures/AniaBalloons_Logo2.png'
 import Dropdown from '../Dropdown';
+import { HashLink } from "react-router-hash-link";
+
 const NavbarBig = (props)=>{
     return (
       <nav>
@@ -15,7 +17,7 @@ const NavbarBig = (props)=>{
           }}
         >
           <li className="nav-button">
-            <NavLink className="" end to="/">
+            <NavLink className="" end to="/animalBalloons">
               {props.texts("PageBalloons")}
             </NavLink>
           </li>
@@ -25,19 +27,20 @@ const NavbarBig = (props)=>{
             </NavLink>
           </li>
           <li className="nav-button">
-            <NavLink className="" end to="/">
+            <NavLink className="" end to="/decorations">
             {props.texts("PageDecorations")}
             </NavLink>
           </li>
           <li className="nav-button">
-            <NavLink className="" end to="/">
+            <NavLink className="" end to="/events">
             {props.texts("PageEvents")}
             </NavLink>
           </li>
           <li className="nav-button">
-            <NavLink className="" end to="/">
-            {props.texts("PageEvents")}
-            </NavLink>
+         
+          <HashLink smooth to={'/#Lorem_1'}>
+          {props.texts("PageContact")}
+            </HashLink>
           </li>
 
           <li>

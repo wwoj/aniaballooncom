@@ -2,7 +2,7 @@ import './App.css';
 import "./Styles/main.scss";
 
 
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './Views/home';
 import Contact from './Views/contact';
 
@@ -23,19 +23,32 @@ function App() {
   }, [selected])
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <HeaderMain texts={t} selected={selected} setSelected={setSelected} />
         <Routes>
           <Route exact path="/" element={<Home texts={t} />} />
 
           <Route
             exact
+            path="/animalBalloons"
+            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle1")} />}
+          />
+          <Route
+            exact
             path="/backdrops"
-            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} />}
+            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle2")} />}
+          /><Route
+            exact
+            path="/decorations"
+            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle3")} />}
+          /><Route
+            exact
+            path="/events"
+            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle4")} />}
           />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <div className="footer-cover"></div>
       <Footer />
     </div>

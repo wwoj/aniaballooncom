@@ -1,5 +1,6 @@
 import { Fragment, useState} from "react";
 import ImageModal from "../Components/UI/ImageModal";
+import GalleryBackdropTitle from "../Components/GalleryBackdropTitle";
 
 
 function Gallery_Backdrops(props) {
@@ -24,6 +25,7 @@ function Gallery_Backdrops(props) {
     <Fragment>
       {showImageModal && <ImageModal imagesArrey={props.gallerySource} entryId={idOfImageToShowInModal} onHide={hideImage} />}
       <div className="page-view-container">
+          <GalleryBackdropTitle title={props.title}/>
         <div className="gallery">
           {props.gallerySource.map((x, y) => (
             <div className="pics" onClick={() => showImageHandler(y)} key={y}>
