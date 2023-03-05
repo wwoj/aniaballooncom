@@ -19,7 +19,7 @@ const ContainerWidget = (props)=>{
               {props.btnText}
             </NavLink>
           </div>
-          <div className="widget-img-container">
+          <div className="widget-img-container" style={{backgroundImage:`url(${props.bgImg})`}}>
    
           </div>
           <div className="home-float-container"></div>
