@@ -27,8 +27,12 @@
       "GalleryTitle1": "Gallery of animal balloons",
       "GalleryTitle2": "Gallery of backdrops",
       "GalleryTitle3": "Gallery of decorations",
-      "GalleryTitle4": "Gallerry of events"
-      
+      "GalleryTitle4": "Gallerry of events",
+      "home_1": "Go to animal balloons gallery",
+      "home_2": "Go to photo backdrops gallery",
+      "home_3": "Go to decorations gallery",
+      "home_4": "Go to events gallery"
+
 
     
     }   

@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import AniasBalloonLogo from '../../Pictures/AniaBalloons_Logo2.png'
 import Dropdown from '../Dropdown';
@@ -8,13 +9,21 @@ import { faHippo, faImage, faCakeCandles,faAddressCard,faGifts } from '@fortawes
 function NavbarSmall (props){
   const ref = useRef(null);
   const [showMenu, setShowMenu] = useState(false);
+  function hideNav(){
+    setShowMenu((prevState)=>{
+
+      document.body.style.position = prevState? 'static':'fixed';
+      return !prevState
+    });
+  }
     return (
       <div>
         <nav>
+        <NavLink className="" end to="/">
           <div className="header-logo-container">
             <img src={AniasBalloonLogo} alt="Logo" className="img-logo" />
           </div>
-
+      </NavLink>
           <div className="navbarsmall-btn-container">
             <Dropdown
               selected={props.selected}
@@ -22,7 +31,15 @@ function NavbarSmall (props){
             />
             <button
               onClick={() => {
-                setShowMenu(!showMenu);
+                setShowMenu((prevState)=>{
+
+                  document.body.style.position = prevState? 'static':'fixed';
+                  return !prevState
+                });
+
+                
+
+
               }}
             >
               <span
@@ -38,7 +55,7 @@ function NavbarSmall (props){
           <div></div>
           <ul>
             <li className="">
-              <NavLink className="" end to="/animalBalloons">
+              <NavLink className="" end to="/animalBalloons" onClick={hideNav}>
                 <div className="navbar-small-container-svg">
                   <FontAwesomeIcon icon={faHippo} />
                 </div>
@@ -46,7 +63,7 @@ function NavbarSmall (props){
               </NavLink>
             </li>
             <li className="">
-              <NavLink className="" end to="/backdrops">
+              <NavLink className="" end to="/backdrops" onClick={hideNav}>
                 <div className="navbar-small-container-svg">
                   <FontAwesomeIcon icon={faImage} />
                 </div>
@@ -55,7 +72,7 @@ function NavbarSmall (props){
               </NavLink>
             </li>
             <li className="">
-              <NavLink className="" end to="/decorations">
+              <NavLink className="" end to="/decorations" onClick={hideNav}>
                 <div className="navbar-small-container-svg">
                   <FontAwesomeIcon icon={faGifts} />
                 </div>
@@ -63,7 +80,7 @@ function NavbarSmall (props){
               </NavLink>
             </li>
             <li className="">
-              <NavLink className="" end to="/events">
+              <NavLink className="" end to="/events" onClick={hideNav}>
                 <div className="navbar-small-container-svg">
                   <FontAwesomeIcon icon={faCakeCandles} />
                 </div>
@@ -71,12 +88,12 @@ function NavbarSmall (props){
               </NavLink>
             </li>
             <li className="">
-              <NavLink className="" end to="/contact">
+            <HashLink smooth to={'/#Lorem_1'} onClick={hideNav}>
                 <div className="navbar-small-container-svg">
                   <FontAwesomeIcon icon={faAddressCard} />
                 </div>
                 <span>{props.texts("PageContact")}</span>
-              </NavLink>
+                </HashLink>
             </li>
           </ul>
         </div>

@@ -39,7 +39,7 @@ function Dropdown ({selected, setSelected}){
                 key={y}
               >
                 {x.lang}
-                <img className="country-flag" src={x.country==="us"?flagUSA: flagPL}/>
+                <img className="country-flag" src={x.country==="us"?flagUSA: flagPL} data-lang={x.country}/>
               </div>
             ))}
           </div>

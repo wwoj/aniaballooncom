@@ -27,8 +27,11 @@
    "GalleryTitle1": "Galeria balonowych zwierzątek",
    "GalleryTitle2": "Galeria ścianek fotograficznych",
    "GalleryTitle3": "Galeria dekoracji",
-   "GalleryTitle4": "Galeria wydarzeń"
-
+   "GalleryTitle4": "Galeria wydarzeń",
+   "home_1": "Przejdź do galerii balonowych zwierzątek",
+   "home_2": "Przejdź do galerii ścianek",
+   "home_3": "Przejdź do galerii dekoracji",
+   "home_4": "Przejdź do galerii wydarzeń"
   
   }   
 }

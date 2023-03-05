@@ -31,26 +31,47 @@ function App() {
           <Route
             exact
             path="/animalBalloons"
-            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle1")} />}
+            element={
+              <Gallery_Backdrops
+                gallerySource={ANIMAL_BALLOONS}
+                title={t("GalleryTitle1")}
+              />
+            }
           />
           <Route
             exact
             path="/backdrops"
-            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle2")} />}
-          /><Route
+            element={
+              <Gallery_Backdrops
+                gallerySource={ANIMAL_BALLOONS}
+                title={t("GalleryTitle2")}
+              />
+            }
+          />
+          <Route
             exact
             path="/decorations"
-            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle3")} />}
-          /><Route
+            element={
+              <Gallery_Backdrops
+                gallerySource={ANIMAL_BALLOONS}
+                title={t("GalleryTitle3")}
+              />
+            }
+          />
+          <Route
             exact
             path="/events"
-            element={<Gallery_Backdrops gallerySource={ANIMAL_BALLOONS} title={t("GalleryTitle4")} />}
+            element={
+              <Gallery_Backdrops
+                gallerySource={ANIMAL_BALLOONS}
+                title={t("GalleryTitle4")}
+              />
+            }
           />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
+        <Footer texts={t}/>
       </BrowserRouter>
-      <div className="footer-cover"></div>
-      <Footer />
     </div>
   );
 }

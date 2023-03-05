@@ -6,9 +6,11 @@ import { HashLink } from "react-router-hash-link";
 const NavbarBig = (props)=>{
     return (
       <nav>
+        <NavLink className="" end to="/">
         <div className="header-logo-container">
           <img className="img-logo" src={AniasBalloonLogo} alt="" />
         </div>
+        </NavLink>
         <ul
           className="header-list"
           onChange={(e) => {
@@ -19,7 +21,7 @@ const NavbarBig = (props)=>{
           <li className="nav-button">
             <NavLink className="" end to="/animalBalloons">
               {props.texts("PageBalloons")}
-            </NavLink>
+              </NavLink>
           </li>
           <li className="nav-button">
             <NavLink className="" end to="/backdrops">
