@@ -12,7 +12,7 @@ import Gallery_Backdrops from './Views/gallery_Backdrops';
 import { useEffect, useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
-import { ANIMAL_BALLOONS } from "./Pictures/GalleryImages"
+import { ANIMAL_BALLOONS, DECORATION_BALLOONS, EVENT_IMAGES, BACKDROP_IMAGES } from "./Pictures/GalleryImages"
 
 function App() {
   const [selected, setSelected] = useState("us");
@@ -43,7 +43,7 @@ function App() {
             path="/backdrops"
             element={
               <Gallery_Backdrops
-                gallerySource={ANIMAL_BALLOONS}
+                gallerySource={BACKDROP_IMAGES}
                 title={t("GalleryTitle2")}
               />
             }
@@ -53,7 +53,7 @@ function App() {
             path="/decorations"
             element={
               <Gallery_Backdrops
-                gallerySource={ANIMAL_BALLOONS}
+                gallerySource={DECORATION_BALLOONS}
                 title={t("GalleryTitle3")}
               />
             }
@@ -63,7 +63,7 @@ function App() {
             path="/events"
             element={
               <Gallery_Backdrops
-                gallerySource={ANIMAL_BALLOONS}
+                gallerySource={EVENT_IMAGES}
                 title={t("GalleryTitle4")}
               />
             }
