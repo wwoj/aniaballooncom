@@ -19,7 +19,7 @@ const Home = (props) => {
       <ContainerWidget bgImg={MAIN_PAGE_IMAGES[0]} btnText={props.texts('home_1')} title={props.texts("PageBalloons")} description={props.texts("HomeText2")}/>
       <ContainerWidget bgImg={MAIN_PAGE_IMAGES[1]} btnText={props.texts('home_2')} title={props.texts("PageBackdrop")}  description={props.texts("HomeText3")}/>
       <ContainerWidget bgImg={MAIN_PAGE_IMAGES[2]} btnText={props.texts('home_3')} title={props.texts("PageDecorations")}  description={props.texts("HomeText4")}/>
-      <ContainerWidget bgImg={MAIN_PAGE_IMAGES[3]} btnText={props.texts('home_4')} title={props.texts("PageEvents")}  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+      <ContainerWidget bgImg={MAIN_PAGE_IMAGES[3]} btnText={props.texts('home_4')} title={props.texts("PageEvents")}  description={props.texts("HomeText5")} />
       <ContainerWidgetVideo/>
       <ContactForm />
     </div>

@@ -11,9 +11,10 @@
    "HomeText1-1":"Witam w moim magicznym balonowym świecie!",
    "HomeText1-2":"Tutaj zwykłe balony zmieniają się",
    "HomeText1-3": "w niezwykłe zwierzątka i piękne dekoracje!",
-   "HomeText2": "Planujesz wesele, komunie, chrzciny, urodziny czy inną uroczystość?",
-   "HomeText3":"Chcesz aby Twoja sala wyglądala wyjątkowo, aby Twoje dzieci miały niezapomnianą przygode a wszyscy goście piękne zdjęcia?",
-   "HomeText4":"Jestem Ania. Specjalizuje się w balonowych dekoracjach sal bankietowych, produkcji ścianek fotograficznych i przede wszystkim w zabawianiu dzieci robieniem niesamowitych balonowych zwierzątek, zabawek itp.",
+   "HomeText2":"Specjalizuje się w balonowych dekoracjach sal bankietowych, produkcji ścianek fotograficznych i przede wszystkim w zabawianiu dzieci robieniem niesamowitych balonowych zwierzątek, zabawek itp.",
+   "HomeText3":"Planujesz wesele, komunię, chrzciny, urodziny czy inną uroczystość?",
+   "HomeText4":"Chcesz aby Twoja sala wyglądala wyjątkowo, aby Twoje dzieci miały niezapomnianą przygode a wszyscy goście piękne zdjęcia?",
+   "HomeText5":"Stworzę wyjątkowe dekoracje, które uświetnią Twoje urodziny, wesele, chrzciny i inne eventy!",
    "footer_Help":"Pomoc",
    "footer_Cookies":"Cookies Policy",
    "footer_Statute":"Regulamin",
@@ -28,10 +29,10 @@
    "GalleryTitle2": "Galeria ścianek fotograficznych",
    "GalleryTitle3": "Galeria dekoracji",
    "GalleryTitle4": "Galeria wydarzeń",
-   "home_1": "Przejdź do galerii balonowych zwierzątek",
-   "home_2": "Przejdź do galerii ścianek",
-   "home_3": "Przejdź do galerii dekoracji",
-   "home_4": "Przejdź do galerii wydarzeń"
+   "home_1": "Zobacz galerię balonowych zwierzątek!",
+   "home_2": "Zobacz galerię ścianek!",
+   "home_3": "Zobacz galerię dekoracji!",
+   "home_4": "Zobacz galerię wydarzeń!"
   
   }   
 }
