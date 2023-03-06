@@ -20,14 +20,44 @@ img {
     width: 35px;
     left: -10px;
 }
-
-@media all and (max-width: 800px) {
+.gallery-gotop-button{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    box-shadow: 2px springgreen;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-10%, -100%);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(188deg, rgba(159, 5, 255, 0.4117647059) 10%, rgba(253, 94, 8, 0.4196078431) 100%);
+    path{
+        fill: white;
+        opacity: 0.6;
+    }
+}
+.gallery-btn-fade-in{
+    opacity: 1;
+}
+.gallery-btn-fade-out{
+    opacity: 0;
+}
+@media all and (max-width: 850px) {
     .gallery {
         columns: 2;
     }
+    .gallery-gotop-button{
+        display: flex;
+    }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 500px) {
     .gallery {
         columns: 1;
 

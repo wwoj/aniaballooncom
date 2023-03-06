@@ -1,7 +1,7 @@
 import { Fragment, useState} from "react";
 import ImageModal from "../Components/UI/ImageModal";
 import GalleryBackdropTitle from "../Components/GalleryBackdropTitle";
-
+import GoTopButton from "../Components/UI/GoTopButton";
 
 function Gallery_Backdrops(props) {
 
@@ -37,6 +37,7 @@ function Gallery_Backdrops(props) {
           ))}
         </div>
       </div>
+      <GoTopButton/>
     </Fragment>
   );
 }
