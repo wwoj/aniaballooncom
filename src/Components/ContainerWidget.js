@@ -13,7 +13,7 @@ const ContainerWidget = (props)=>{
             <NavLink
               className="home-gallery-button-a"
               end
-              to="/animalBalloons"
+              to={props.url}
               onClick={goTop}
             >
               {props.btnText}

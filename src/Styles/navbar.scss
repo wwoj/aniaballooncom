@@ -64,7 +64,7 @@ nav {
             justify-content: flex-start;
             gap: 30px;
             border-radius: 15px;
-            background-color: #ffc2c2;
+            background-color: #ff3c75;
             color: #fff;
             &:hover {
                 cursor: pointer;
@@ -74,7 +74,7 @@ nav {
                 }
             }
             path {
-                fill: #65abe7;
+                fill: #ff3c75;
             }
         }
     }
@@ -196,6 +196,7 @@ nav {
     box-sizing: content-box;
 }
 .dropdown .dropdown-content .dropdown-item {
+    padding: 5px 0;
     box-sizing: border-box;
     font-size: var(--font-size-dropdown-item);
     cursor: pointer;
@@ -279,8 +280,8 @@ button:has(.close-mark) {
 
 @media all and (max-width: 1150px) {
     :root {
-        --font-size-header-nav: 12px;
-        --font-size-dropdown-item: 12px;
+        --font-size-header-nav: 14px;
+        --font-size-dropdown-item: 14px;
         overflow-x: hidden;
         max-width: 100vw;
         --width-img-logo: 135px;
