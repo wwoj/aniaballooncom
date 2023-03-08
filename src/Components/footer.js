@@ -47,7 +47,7 @@ const Footer = (props) => {
               </li>
             </ul>
           </div>
-          <p>Ania's Balloons World</p>
+          <p>Ania's Balloon World</p>
         </div>
         <div className="footer-services">
           <a
